@@ -584,17 +584,22 @@ ul {
 
 .address-text_info {
   margin-top: 0;
+  margin-bottom: 9px;
 }
 
-.footer-contacts a {
+.footer-contacts-list__item + .footer-contacts-list__item {
+  margin-top: 10px;
+}
+
+.footer-contacts-list__item-link {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
 
   text-decoration: none;
 }
 
-.footer-contacts a:hover,
-.footer-contacts a:focus {
+.footer-contacts-list__item-link:hover,
+.footer-contacts-list__item-link:focus {
   color: var(--main-blue);
 
   transition-property: color;
@@ -613,7 +618,7 @@ ul {
 
 .footer-content_left-side-right-part-accept {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 9px;
   text-transform: uppercase;
   font-weight: 700;
   line-height: 1.17;
