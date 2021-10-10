@@ -51,14 +51,14 @@
     </header>
     <main>
 
-        <section class="hero">
+        <section class="base-section base-section--hero">
             <div class="hero__wrapper page-container">
                 <h1 class="hero__title">эффективные решения для вашего бизнеса</h1>
-                <button class="hero__button" type="button" data-modal-open>Заказать услугу</button>
+                <button class="base-button hero__base-button" type="button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
-
-        <section class="features">
+<!-- Section features -->
+        <section class="base-section">
             <div class="page-container">
                 <h2 class="section-title visually-hidden">Наши особенности</h2>
                 <ul class="features__list">
@@ -81,9 +81,9 @@
                 </ul>
             </div>
         </section>
-
-        <section class="services">
-            <div class="services__wrapper page-container">
+<!-- Section services -->
+        <section class="base-section base-section--services">
+            <div class="page-container">
                 <h2 class="section-title">Чем мы занимаемся</h2>
                 <ul class="services-list">
                     <li class="services-list__item">
@@ -102,9 +102,9 @@
             </div>
         </section>
 
-
-        <section class="team">
-            <div class="team__wrapper page-container">
+<!-- Section team -->
+        <section class="base-section base-section--team ">
+            <div class="page-container">
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="team-list">
                     <li class="team-list__item">
@@ -272,50 +272,50 @@
                 </ul>
             </div>
         </section>
-        <section class="regular-customers">
-            <div class="regular-customers__wrapper page-container">
+        <!-- Section regular customers -->
+        <section class="base-section">
+            <div class="page-container">
                 <h2 class="section-title">Постоянные клиенты</h2>
-                <ul class="regular-customers__list">
-
+                <ul class="regular-customers">
                     <li class="regular-customers__list-item">
-                        <a class="regular-customers__list-link" href="./">
-                            <svg class="regular-customers__list-item-logo" width="41" height="47">
+                        <a class="regular-customers__item-link" href="./">
+                            <svg class="regular-customers__item-logo" width="41" height="47">
                                 <use href="./images/icons.svg#icon-logo-yaco"></use>
                             </svg>
                         </a>
                     </li>
 
                     <li class="regular-customers__list-item">
-                        <a class="regular-customers__list-link" href="./">
-                            <svg class="regular-customers__list-item-logo" width="40" height="52">
+                        <a class="regular-customers__item-link" href="./">
+                            <svg class="regular-customers__item-logo" width="40" height="52">
                                 <use href="./images/icons.svg#icon-logo-company1"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="regular-customers__list-item">
-                        <a class="regular-customers__list-link" href="./">
-                            <svg class="regular-customers__list-item-logo" width="44" height="41"> 
+                        <a class="regular-customers__item-link" href="./">
+                            <svg class="regular-customers__item-logo" width="44" height="41"> 
                                 <use href="./images/icons.svg#icon-logo-company2"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="regular-customers__list-item">
-                        <a class="regular-customers__list-link" href="./">
-                            <svg class="regular-customers__list-item-logo" width="69" height="41">
+                        <a class="regular-customers__item-link" href="./">
+                            <svg class="regular-customers__item-logo" width="69" height="41">
                                 <use href="./images/icons.svg#icon-logo-foster-peters"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="regular-customers__list-item">
-                        <a class="regular-customers__list-link" href="./">
-                            <svg class="regular-customers__list-item-logo" width="63" height="45">
+                        <a class="regular-customers__item-link" href="./">
+                            <svg class="regular-customers__item-logo" width="63" height="45">
                                 <use href="./images/icons.svg#icon-logo-brand"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="regular-customers__list-item">
-                        <a class="regular-customers__list-link" href="./">
-                            <svg class="regular-customers__list-item-logo" width="94" height="44">
+                        <a class="regular-customers__item-link" href="./">
+                            <svg class="regular-customers__item-logo" width="94" height="44">
                                 <use href="./images/icons.svg#icon-logo-company3"></use>
                             </svg>
                         </a>
@@ -386,7 +386,7 @@
                         <p class="footer-form__text">Подпишитесь на рассылку</p>
                         <div class="footer-form__wrapper">
                             <input class="footer-form__input" name="form-footer-input" type="text" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
-                            <button class="footer-form__button-send" type="button">
+                            <button class="base-button footer-form__base-button" type="button">
                                 Подписаться
                             </button>
                         </div>
@@ -446,7 +446,7 @@
                 <label class="modal-form__checkbox-label" for="user-policy">Соглашаюсь с рассылкой и принимаю&nbsp;<a href="#"
                         class="modal-form__checkbox-link">Условия договора</a></label>
             </div>
-            <button type="submit" class="modal-form__btn">Отправить</button>
+            <button class="base-button modal-form__base-button" type="submit">Отправить</button>
         </form>
         </div>
     </div>
