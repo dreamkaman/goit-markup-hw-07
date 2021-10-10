@@ -672,11 +672,11 @@ ul {
   line-height: 1.62;
 }
 
-.filter-item:not(:last-child) {
+.examples-filter__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.filter-item button {
+.examples-filter__item-button {
   padding-top: 6px;
   padding-right: 22px;
   padding-bottom: 6px;
@@ -695,8 +695,8 @@ ul {
   cursor: pointer;
 }
 
-.filter-item button:hover,
-.filter-item button:focus {
+.examples-filter__item-button:hover,
+.examples-filter__item-button:focus {
   background-color: var(--main-blue);
   color: var(--main-white);
 
@@ -718,18 +718,19 @@ ul {
   margin-top: -30px;
 }
 
-.examples-item {
+.examples-list__item {
   margin-left: 30px;
   margin-top: 30px;
   width: calc((100% - 3 * 30px) / 3);
 }
 
-.examples-item-link {
+.examples-list__item-link {
   display: block;
+  text-decoration: none;
 }
 
-.examples-item-link:hover,
-.examples-item-link:focus {
+.examples-list__item-link:hover,
+.examples-list__item-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 
@@ -738,12 +739,16 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.example-image-wrapper {
+.examples-list__item-image-wrapper {
   overflow: hidden;
   position: relative;
 }
 
-.example-hint {
+.examples-list__item-image {
+  width: 370px;
+}
+
+.examples-list__item-hint {
   position: absolute;
   top: 0;
   left: 0;
@@ -767,12 +772,8 @@ ul {
   background-color: rgba(33, 150, 243, 0.9);
 }
 
-.examples-item-link {
-  text-decoration: none;
-}
-
-.examples-item-link:hover .example-hint,
-.examples-item-link:focus .example-hint {
+.examples-list__item-link:hover .examples-list__item-hint,
+.examples-list__item-link:focus .examples-list__item-hint {
   transform: translatey(0);
 
   transition-property: transform;
@@ -780,7 +781,7 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.example-description {
+.examples-list__item-description {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
@@ -790,7 +791,7 @@ ul {
   padding-bottom: 20px;
 }
 
-.examples-item-title {
+.examples-list__item-title {
   margin-top: 0;
   margin-bottom: 4px;
 
@@ -802,7 +803,7 @@ ul {
   color: var(--main-black);
 }
 
-.example-description p {
+.examples-list__item-category {
   margin-top: 0;
   margin-bottom: 0;
 
