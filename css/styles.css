@@ -210,13 +210,13 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 } */
 
-.contacts-list__item-icon {
+/* .contacts-list__item-icon {
   fill: var(--main-gray);
 
   margin-right: 10px;
-}
+} */
 
-.base-section--hero {
+/* .base-section--hero {
   padding-top: 200px;
   padding-bottom: 200px;
 
@@ -231,18 +231,18 @@ ul {
   background-color: var(--background-hero);
 
   color: var(--main-white);
-}
+} */
 
-.hero__wrapper {
+/* .hero__wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
   max-width: 700px;
-}
+} */
 
-.hero__title {
+/* .hero__title {
   margin-top: 0;
   margin-bottom: 30px;
 
@@ -252,9 +252,9 @@ ul {
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
-}
+} */
 
-.hero__base-button {
+/* .hero__base-button {
   padding-top: 10px;
   padding-right: 32px;
   padding-bottom: 10px;
@@ -276,9 +276,24 @@ ul {
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+} */
+
+/* .features__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-top: -30px;
+  margin-left: -30px;
 }
 
-.features-list__item::before {
+.features__list-item {
+  width: calc((100% - 4 * 30px) / 4);
+
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.features__list-item::before {
   content: '';
   display: block;
   height: 120px;
@@ -290,23 +305,23 @@ ul {
   background-position: 50% 50%;
 }
 
-.features-list__item--with-antenna::before {
+.features__list-item--with-antenna::before {
   background-image: url('../images/antenna.svg');
 }
 
-.features-list__item--with-clock::before {
+.features__list-item--with-clock::before {
   background-image: url('../images/clock.svg');
 }
 
-.features-list__item--with-diagram::before {
+.features__list-item--with-diagram::before {
   background-image: url('../images/diagram.svg');
 }
 
-.features-list__item--with-astronaut::before {
+.features__list-item--with-astronaut::before {
   background-image: url('../images/astronaut.svg');
 }
 
-.features-list__title {
+.features__list-item-title {
   margin-top: 0;
   margin-bottom: 10px;
 
@@ -317,35 +332,20 @@ ul {
   text-align: left;
 }
 
-.features-list__description {
+.features__list-item-description {
   margin-top: 0;
   margin-bottom: 0;
 
   font-size: 14px;
   line-height: 1.71;
   color: var(--main-gray);
-}
+} */
 
-.features-list__item {
-  width: calc((100% - 4 * 30px) / 4);
-
-  margin-top: 30px;
-  margin-left: 30px;
-}
-
-.features__list {
-  display: flex;
-  flex-wrap: wrap;
-
-  margin-top: -30px;
-  margin-left: -30px;
-}
-
-.base-section--services {
+/* .base-section--services {
   padding-top: 0;
-}
+} */
 
-.services-list {
+/* .services-list {
   display: flex;
   flex-wrap: wrap;
 
@@ -377,9 +377,9 @@ ul {
 
   color: var(--main-white);
   background-color: rgba(47, 48, 58, 0.8);
-}
+} */
 
-.base-section--team {
+/* .base-section--team {
   background-color: var(--background-sahara);
 }
 
@@ -475,9 +475,9 @@ ul {
   transition-property: background-color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
-.regular-customers {
+/* .regular-customers {
   display: flex;
   margin-top: -30px;
   margin-left: -30px;
@@ -524,8 +524,8 @@ ul {
   justify-content: center;
 
   fill: var(--main-icons);
-}
-
+} */
+/* 
 .footer-content {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -540,7 +540,7 @@ ul {
 .footer-content__wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: baseline; /*test*/
+  align-items: baseline;
 }
 
 .footer-content_left-side {
@@ -557,7 +557,6 @@ ul {
 
 .footer-content_left-side-left-part {
   width: calc((100% - 30px) / 2);
-  /* margin-right: 86px; */
 }
 
 .footer-content__logo {
@@ -603,7 +602,6 @@ ul {
 }
 
 .footer-content_left-side-right-part {
-  /* padding-top: 16px; */
   width: calc((100% - 30px) / 2);
 }
 
@@ -646,9 +644,9 @@ ul {
   width: 20px;
   height: 20px;
   fill: var(--main-white);
-}
+} */
 /* ------------------------styles for portfolio.html -----------------------------------------*/
-.examples {
+/* .examples {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -798,11 +796,9 @@ ul {
   line-height: 1.87;
 
   color: var(--main-gray);
-}
+} */
 
-/* ================================Footer form markup================================ */
-
-.footer-form__text {
+/* .footer-content_right-side-text {
   margin-top: 0;
   margin-bottom: 20px;
 
@@ -813,8 +809,10 @@ ul {
   text-transform: uppercase;
 
   color: #ffffff;
-}
+} */
 
+/* ================================Footer form markup================================ */
+/* 
 .footer-form__input {
   width: 358px;
   height: 50px;
@@ -839,9 +837,6 @@ ul {
   border: 1px solid var(--main-blue);
   background-color: transparent;
 }
-
-/* .footer-form__input::placeholder {
-} */
 
 .footer-form__wrapper {
   display: flex;
@@ -890,7 +885,7 @@ ul {
 
 .footer-form__input:focus:not(:placeholder-shown):valid {
   border: 1px solid rgba(0, 255, 0, 0.3);
-}
+} */
 
 /* ====================Modal form markup=================== */
 .backdrop {

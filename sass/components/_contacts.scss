@@ -32,8 +32,8 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts-list__contact:hover .header-icons,
-.contacts-list__contact:focus .header-icons {
+.contacts-list__contact:hover .contacts-list__item-icon,
+.contacts-list__contact:focus .contacts-list__item-icon {
   fill: $main-blue;
 
   transition-property: fill;
