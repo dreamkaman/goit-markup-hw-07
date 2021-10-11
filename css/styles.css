@@ -167,7 +167,7 @@ ul {
   margin-right: 50px;
 } */
 
-.contacts-list {
+/* .contacts-list {
   display: flex;
   margin-left: auto;
 }
@@ -208,9 +208,9 @@ ul {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
-.header-icons {
+.contacts-list__item-icon {
   fill: var(--main-gray);
 
   margin-right: 10px;

@@ -14,14 +14,14 @@ nav-list {
   padding-top: 32px;
   padding-bottom: 32px;
 
-  color: var(--main-black);
+  color: $main-black;
   text-decoration: none;
   letter-spacing: 0.02em;
 }
 
 .nav-list__link:hover,
 .nav-list__link:focus {
-  color: var(--main-blue);
+  color: $main-blue;
 
   transition-property: color;
   transition-duration: 250ms;
@@ -29,7 +29,7 @@ nav-list {
 }
 
 .nav-list__link--current {
-  color: var(--main-blue);
+  color: $main-blue;
 }
 
 .nav-list__link--current::after {
@@ -41,7 +41,7 @@ nav-list {
   height: 4px;
   width: 100%;
   border-radius: 2px;
-  background-color: var(--main-blue);
+  background-color: $main-blue;
 }
 
 .nav-list__item:not(:last-child) {
