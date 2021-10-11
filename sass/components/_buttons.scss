@@ -23,13 +23,13 @@
 
   color: $main-white;
   background-color: $main-blue;
-}
 
-.hero__base-button:hover,
-.hero__base-button:focus {
-  background-color: $hover-blue;
+  &:hover,
+  &:focus {
+    background-color: $hover-blue;
 
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }

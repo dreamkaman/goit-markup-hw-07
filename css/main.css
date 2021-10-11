@@ -57,8 +57,7 @@ ul {
   background-color: #2196f3;
 }
 
-.hero__base-button:hover,
-.hero__base-button:focus {
+.hero__base-button:hover, .hero__base-button:focus {
   background-color: #188ce8;
   transition-property: background-color;
   transition-duration: 250ms;
