@@ -14,13 +14,21 @@
   background-color: transparent;
 
   color: $main-white;
-}
 
-.footer-form__input:focus {
-  outline: none;
-  color: $main-white;
-  border: 1px solid $main-blue;
-  background-color: transparent;
+  &:focus {
+    outline: none;
+    color: $main-white;
+    border: 1px solid $main-blue;
+    background-color: transparent;
+
+    &:not(:placeholder-shown):invalid {
+      border: 1px solid rgba(255, 0, 0, 0.3);
+    }
+
+    &:not(:placeholder-shown):valid {
+      border: 1px solid rgba(0, 255, 0, 0.3);
+    }
+  }
 }
 
 .footer-form__wrapper {
@@ -43,31 +51,23 @@
 
   color: $main-white;
   background-color: $main-blue;
-}
 
-.footer-form__base-button:hover,
-.footer-form__base-button:focus {
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  background-color: $hover-blue;
-}
+  &:hover,
+  &:focus {
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: $hover-blue;
+  }
 
-.footer-form__base-button::after {
-  display: block;
-  content: '';
-  width: 24px;
-  height: 24px;
-  margin-left: 10px;
+  &::after {
+    display: block;
+    content: '';
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
 
-  background-image: url('../images/icon-send.svg');
-  background-size: contain;
-}
-
-.footer-form__input:focus:not(:placeholder-shown):invalid {
-  border: 1px solid rgba(255, 0, 0, 0.3);
-}
-
-.footer-form__input:focus:not(:placeholder-shown):valid {
-  border: 1px solid rgba(0, 255, 0, 0.3);
+    background-image: url('../images/icon-send.svg');
+    background-size: contain;
+  }
 }

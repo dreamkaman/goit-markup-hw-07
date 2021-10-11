@@ -30,19 +30,19 @@
 
   background-color: $background-sahara;
   color: $main-black;
-}
 
-.examples-filter__base-button:hover,
-.examples-filter__base-button:focus {
-  background-color: $main-blue;
-  color: $main-white;
+  &:hover,
+  &:focus {
+    background-color: $main-blue;
+    color: $main-white;
 
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
 
-  transition-property: background-color, color, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: background-color, color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .examples-list {
@@ -64,16 +64,24 @@
 .examples-list__item-link {
   display: block;
   text-decoration: none;
-}
 
-.examples-list__item-link:hover,
-.examples-list__item-link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
 
-  transition-property: box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    & .examples-list__item-hint {
+      transform: translatey(0);
+
+      transition-property: transform;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
 }
 
 .examples-list__item-image-wrapper {
@@ -107,15 +115,6 @@
 
   color: $main-white;
   background-color: rgba(33, 150, 243, 0.9);
-}
-
-.examples-list__item-link:hover .examples-list__item-hint,
-.examples-list__item-link:focus .examples-list__item-hint {
-  transform: translatey(0);
-
-  transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .examples-list__item-description {

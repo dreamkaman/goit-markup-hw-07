@@ -59,15 +59,15 @@
   font-style: normal;
 
   text-decoration: none;
-}
 
-.footer-contacts-list__item-link:hover,
-.footer-contacts-list__item-link:focus {
-  color: $main-blue;
+  &:hover,
+  &:focus {
+    color: $main-blue;
 
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .footer-mail {
@@ -75,7 +75,6 @@
 }
 
 .footer-content_left-side-right-part {
-  /* padding-top: 16px; */
   width: calc((100% - 30px) / 2);
 }
 
@@ -99,19 +98,19 @@
   height: 44px;
   border-radius: 50%;
   background-color: $background-social;
+
+  &:hover,
+  &:focus {
+    background-color: $main-blue;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .footer-social-links_item:not(:last-child) {
   margin-right: 10px;
-}
-
-.footer-social-links_item-link:hover,
-.footer-social-links_item-link:focus {
-  background-color: $main-blue;
-
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-links_item-icon {
@@ -130,5 +129,5 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: $main-white;
 }

@@ -11,18 +11,18 @@
 
   margin-top: 30px;
   margin-left: 30px;
-}
 
-.features__list-item::before {
-  content: '';
-  display: block;
-  height: 120px;
-  border-radius: 4px;
-  margin-bottom: 30px;
-  background-color: $background-sahara;
-  background-repeat: no-repeat;
-  background-size: 70px 70px;
-  background-position: 50% 50%;
+  &::before {
+    content: '';
+    display: block;
+    height: 120px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background-color: $background-sahara;
+    background-repeat: no-repeat;
+    background-size: 70px 70px;
+    background-position: 50% 50%;
+  }
 }
 
 .features__list-item--with-antenna::before {

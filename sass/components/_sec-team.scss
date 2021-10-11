@@ -69,29 +69,28 @@
   height: 44px;
   border-radius: 50%;
   background-color: transparent;
+
+  &:hover,
+  &:focus {
+    background-color: $main-blue;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    & .social-links__item-icon {
+      background-color: $main-blue;
+      fill: $main-white;
+
+      transition-property: background-color, fill;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
 }
 
 .social-links__item-icon {
   width: 20px;
   height: 20px;
   fill: $main-icons;
-}
-
-.social-links__item-link:hover,
-.social-links__item-link:focus {
-  background-color: $main-blue;
-
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.social-links__item-link:hover .social-links__item-icon,
-.social-links__item-link:focus .social-links__item-icon {
-  background-color: $main-blue;
-  fill: $main-white;
-
-  transition-property: background-color, fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
