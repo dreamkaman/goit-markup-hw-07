@@ -1,5 +1,5 @@
 /* --------------------------------shared styles--------------------------------*/
-:root {
+/* :root {
   --main-blue: #2196f3;
   --main-icons: #afb1b8;
   --hover-blue: #188ce8;
@@ -13,9 +13,9 @@
   --background-social: rgba(255, 255, 255, 0.1);
   --black-alfa-02: rgba(33, 33, 33, 0.2);
   --black-alfa-05: rgba(117, 117, 117, 0.5);
-}
+} */
 
-body {
+/* body {
   font-family: Roboto, sans-serif;
   color: var(--main-black);
   letter-spacing: 0.03em;
@@ -31,21 +31,17 @@ ul {
   margin-bottom: 0;
 
   list-style: none;
-}
+} */
 
-.nav-list__link--current {
-  color: var(--main-blue);
-}
-
-.page-container {
+/* .page-container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
-.visually-hidden {
+/* .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
   clip: rect(1px, 1px, 1px, 1px);
@@ -54,9 +50,9 @@ ul {
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
-}
+} */
 
-.base-button {
+/* .base-button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,25 +62,24 @@ ul {
 
   font-family: Roboto, sans-serif;
   cursor: pointer;
-}
+} */
 
-.base-section {
+/* .base-section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
 .section-title {
-  /*to global*/
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   margin-top: 0;
   margin-bottom: 50px;
-}
+} */
 
 /* --------------------------------settings for index.html -------------------------------------*/
-.header-content {
+/* .header-content {
   border-bottom: #ececec solid 1px;
 
   font-weight: 500;
@@ -98,13 +93,13 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+} */
 
-.header-nav {
+/* .header-nav {
   display: flex;
-}
+} */
 
-.logo {
+/* .logo {
   display: inline-block;
 
   font-family: Raleway, sans-serif;
@@ -124,9 +119,9 @@ ul {
 
 .logo__text {
   color: var(--main-blue);
-}
+} */
 
-.nav-list {
+/* .nav-list {
   display: flex;
   margin: 0;
   padding: 0;
@@ -152,6 +147,10 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.nav-list__link--current {
+  color: var(--main-blue);
+}
+
 .nav-list__link--current::after {
   position: absolute;
   bottom: 0;
@@ -166,7 +165,7 @@ ul {
 
 .nav-list__item:not(:last-child) {
   margin-right: 50px;
-}
+} */
 
 .contacts-list {
   display: flex;
